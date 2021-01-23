@@ -2,8 +2,10 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
+const REACT_APP_FIREB_API_KEY = process.env.REACT_APP_FIREB_API_KEY;
+
 const config = {
-    apiKey: "",
+    apiKey: REACT_APP_FIREB_API_KEY,
     authDomain: "crwn-db-8fdc2.firebaseapp.com",
     databaseURL: "https://crwn-db-8fdc2.firebaseio.com",
     projectId: "crwn-db-8fdc2",
