@@ -1,5 +1,17 @@
 import React from 'react';
 
+import { CustomButtonContainer } from './custom-button.styles';
+
+const CustomButton = ({ children, ...props }) => (
+  <CustomButtonContainer {...props}>{children}</CustomButtonContainer>
+);
+
+export default CustomButton;
+
+/*
+
+// using non-styled components - scss import
+
 import './custom-button.styles.scss';
 
 const CustomButton = ({
@@ -17,21 +29,6 @@ const CustomButton = ({
       {children}
     </button>
   );
-
-export default CustomButton;
-
-
-/*
-
-//using styled.components - custom-button.styles.jsx added file
-
-import React from 'react';
-
-import { CustomButtonContainer } from './custom-button.styles';
-
-const CustomButton = ({ children, ...props }) => (
-  <CustomButtonContainer {...props}>{children}</CustomButtonContainer>
-);
 
 export default CustomButton;
 
